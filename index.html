@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast dog: Reporte um cachorro em situação de necessidade na região de Jundiaí</title>
+    <link rel="stylesheet" href="css/main.css"> <!-- Link para o CSS -->
+</head>
+<body>
+    <h1>Fast dog: Reporte um cachorro em necessidade</h1>
+    
+    <form id="reportForm" enctype="multipart/form-data">
+        <label for="name">Nome Completo:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="contact">Informações de Contato (Email ou Telefone):</label><br>
+        <input type="text" id="contact" name="contact" required><br><br>
+        
+        <label for="photo">Envie uma Foto do Cachorro:</label><br>
+        <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+        
+        <label for="location">Localização:</label><br>
+        <input type="text" id="location" name="location" readonly><br><br>
+        
+        <button type="button" onclick="getLocation()">Obter Minha Localização</button><br><br>
+        
+        <button type="submit">Enviar Relatório</button>
+    </form>
+    
+    <p id="status"></p>
+
+    <h2>Sobre a Fast Dog</h2>
+    <p>A Fast Dog surge da necessidade urgente de um serviço de resgate de cães que funcione 24 horas e que tenha uma abordagem visando tanto a recuperação dos animais quanto seu reintegração na sociedade. Através de parcerias estratégicas, iniciativas de sustentabilidade e um profundo compromisso com o bem-estar animal, estamos confiantes de que podemos transformar a vida dos cães abandonados e também impactar positivamente a nossa comunidade.</p>
+    
+    <h3>Informações de contato e doações:</h3>
+    <p>fastdog@gmail.com</p>
+
+    <script src="js/main.js"></script> <!-- Link para o JavaScript -->
+</body>
+</html>
